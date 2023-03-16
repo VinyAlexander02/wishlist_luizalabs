@@ -11,8 +11,8 @@ You can view the project layout through the link below:
 
 ## How to execute
  # Clone the project and access the folder 
- git clone
- cd 
+ git clone https://github.com/VinyAlexander02/wishlist_luizalabs.git
+ cd wishlist_luizalabs
 
 ## To Start the project, do the comands below
 ## Commands to install the project dependences
