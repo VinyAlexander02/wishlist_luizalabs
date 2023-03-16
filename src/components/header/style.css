@@ -1,0 +1,59 @@
+.header {
+  background: rgb(93, 44, 150);
+  padding: 20px 0 20px 0;
+}
+
+.header .input {
+  width: 850px;
+  margin: 0 0 0 485px;
+  padding: 5px;
+  border-radius: 2px;
+  border: 0 solid black;
+}
+
+.components-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.components-header .h5 {
+  color: white;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.components-header .h5:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links-content {
+  color: white;
+  font-weight: bold;
+}
+
+.links-content:hover {
+  color: rgb(210, 175, 240);
+  transition: 0.5s;
+}
+
+.div-input{
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  margin: 0 7px; 
+}
+
+.input-header {
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  width: 700px;
+}

@@ -1,0 +1,48 @@
+.container {
+  margin-top: 15px;
+}
+
+.container h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.content {
+  margin-top: 15px;
+}
+
+.product-title {
+  text-align: center;
+}
+
+.product-content {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 60px;
+  color: gold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.card {
+  padding-bottom: 25px;
+  margin: 10px;
+}
+
+.content {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wish-icon-close {
+  background-color: black;
+  position: absolute;
+  font-size: 25px;
+  color: white;
+  margin: 3px 260px;
+  border-radius: 12px;
+  cursor: pointer
+}
+
+.wish-icon-close:hover {
+  color: red;
+}

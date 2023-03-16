@@ -1,0 +1,72 @@
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import Header from "../../components/header";
+import Card from "react-bootstrap/Card";
+import { AiFillHeart } from "react-icons/ai";
+import logo from "../../assets/images/logo.png";
+import { getAll, save, remove } from "../../utils/localStorage";
+import "./style.css";
+
+const api =
+  "https://run.mocky.io/v3/66063904-d43c-49ed-9329-d69ad44b885e/products";
+
+const storageKey = "wishlist";
+export const Main = () => {
+  const [products, setProducts] = useState([]);
+  const [wishlist, setWishlist] = useState(getAll(storageKey));
+
+  useEffect(() => {
+    axios
+      .get(api)
+      .then((response) => {
+        setProducts(response.data.products);
+      })
+      .catch((error) => {
+        alert('Não foi possível encontrar o elemento!');
+      });
+  }, []);
+
+  const saveProduct = (product) => {
+    const data = save("wishlist", product);
+    setWishlist(data);
+  };
+
+  const removeItem = (item) => {
+    const data = remove(storageKey, item);
+    setWishlist(data);
+  };
+
+  return (
+    <>
+      <Header />
+      <div className="container">
+        <h3> Home </h3>
+        <div className="content">
+          {products.map((p) => (
+            <Card style={{ width: "18rem" }} className="card" key={p.id}>
+              {wishlist.findIndex((e) => e.id === p.id) !== -1 ? (
+                <AiFillHeart
+                  className="wish-icon"
+                  style={{ color: "red" }}
+                  onClick={() => removeItem(p)}
+                />
+              ) : (
+                <AiFillHeart
+                  className="wish-icon"
+                  onClick={() => saveProduct(p)}
+                />
+              )}
+              <Card.Img variant="top" src={logo} />
+              <Card.Body>
+                <Card.Title className="product-title" key={p.id}>
+                  {p.title}
+                </Card.Title>
+                <Card.Text className="product-content">R$ {p.price}0</Card.Text>
+              </Card.Body>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
