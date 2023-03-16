@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "../../components/header";
 import Card from "react-bootstrap/Card";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/Tshirt.webp";
 import { getAll, remove } from "../../utils/localStorage";
 import { CiCircleRemove } from "react-icons/ci";
 import "./style.css";
