@@ -4,10 +4,25 @@ import { MdLocationOn } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiFillHeart } from "react-icons/ai";
 import "./style.css";
+import { useState } from "react";
 
+function Header({ onSearch }) {
+  const [search, setSearch] = useState([]);
+  const [products, setProducts] = useState([]);
+  const [allProducts, setAllProducts] = useState([])
 
+  const handleSearch = (event) => {
+    const value = event.target.value;
+    setSearch(value);
+    onSearch(value);
 
-function Header() {
+    setSearch(value);
+    if (value === "") {
+      setProducts(allProducts);
+    } else {
+      onSearch(value);
+    }
+  };
 
   return (
     <>
@@ -40,7 +55,13 @@ function Header() {
         </Nav>
 
         <div className="div-input">
-          <input type="text" placeholder="Busca" className="input-header"></input>
+          <input
+            type="text"
+            placeholder="Busca"
+            className="input-header"
+            value={search}
+            onChange={handleSearch}
+          ></input>
         </div>
       </div>
     </>

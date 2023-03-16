@@ -11,18 +11,28 @@ const api =
   "https://run.mocky.io/v3/66063904-d43c-49ed-9329-d69ad44b885e/products";
 
 const storageKey = "wishlist";
+
 export const Main = () => {
   const [products, setProducts] = useState([]);
+  const [allProducts, setAllProducts] = useState([])
   const [wishlist, setWishlist] = useState(getAll(storageKey));
+
+  const handleSearch = (value) => {
+    const filterProducts = allProducts.filter((product) =>
+      product.title.toLowerCase().includes(value.toLowerCase())
+    );
+    setProducts(filterProducts);
+  };
 
   useEffect(() => {
     axios
       .get(api)
       .then((response) => {
         setProducts(response.data.products);
+        setAllProducts(response.data.products)
       })
       .catch((error) => {
-        alert('Não foi possível encontrar o elemento!');
+        alert("Não foi possível encontrar encontar a lista de produtos no momento, por favor tente mais tarde!");
       });
   }, []);
 
@@ -38,7 +48,7 @@ export const Main = () => {
 
   return (
     <>
-      <Header />
+      <Header onSearch={handleSearch}/>
       <div className="container">
         <h3> Home </h3>
         <div className="content">
