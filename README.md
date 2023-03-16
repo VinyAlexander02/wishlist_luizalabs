@@ -1,24 +1,31 @@
-## This project was developed with this technologies:
-React
+## Pré-Requisitos
+ReactJS <br/>
 Bootstrap
 
 ## Project 
-Project made in react of a wishlist (list of favorites) in a marketplace.
-With add and remove functionality, and access to bookmarks tab which contains remove functionality
+Projeto feito em reacts de uma wishlist (lista de desejos) e um marketplace, onde é possível adicionar e remover produtos da wishlist
+
+## Instalação
+Antes de iniciar a instalação é necessário ter o git instalado na maquina <br/>
+1. O Git é um sistema de controle de versão distribuído e amplamente adotado
+2. Site para fazer a instalação do git: https://git-scm.com/downloads
+
+## Baixando o projeto na maquina
+* Quando o git estiver instalado na maquina, rode o seguinte comando: <br />
+1. git clone https://github.com/VinyAlexander02/wishlist_luizalabs.git <br />
+* Para entrar na pasta do projeto
+1. cd wishlist_luizalabs
+
+# Para iniciar o projeto rode os comandos abaixo:
+## Para instalar as dependências do projeto
+npm install ou yarn install
+
+## Comando para iniciar o projeto
+npm start ou yarn start <br />
+O projeto irá rodar na porta: http://localhost:3000
 
 ## Layout 
-You can view the project layout through the link below:
-https://wishlist-luizalabs-coral.vercel.app/
+Você pode visualizar o layout do projeto através do link abaixo:<br />
+* https://wishlist-luizalabs-coral.vercel.app/
 
-## How to execute
- # Clone the project and access the folder 
- git clone https://github.com/VinyAlexander02/wishlist_luizalabs.git
- cd wishlist_luizalabs
 
-## To Start the project, do the comands below
-## Commands to install the project dependences
-npm install or yarn install
-
-## Commands to start the project 
-npm start or yarn start
-The app will run in port http://localhost:3000

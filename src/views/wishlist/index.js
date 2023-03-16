@@ -10,6 +10,13 @@ const storageKey = "wishlist";
 export const Wishlist = () => {
   const [list, setList] = useState([]);
 
+  const handleSearch = (value) => {
+    const filterProducts = list.filter((product) =>
+      product.title.toLowerCase().includes()(value.toLowerCase())
+    );
+    setList(filterProducts);
+  };
+
   const get = () => {
     const data = getAll(storageKey);
     setList(data);
@@ -21,14 +28,16 @@ export const Wishlist = () => {
 
   const removeItem = (item) => {
     const data = remove(storageKey, item);
-    setList(data)
+    setList(data);
   };
 
   return (
     <>
-      <Header />
+      <Header onSearch={handleSearch} />
       <div className="container">
-        <h3> Home &gt; Lista de desejos </h3>
+        <h3>
+          <a href="/">Home &gt;</a> <a href="/wishlist"> Lista de desejos </a>
+        </h3>
         <div className="content">
           {list.map((l) => (
             <div key={l.id}>

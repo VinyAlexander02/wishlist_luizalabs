@@ -8,15 +8,20 @@
 
 .content {
   margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .product-title {
   text-align: center;
+  font-size: 15px;
 }
 
 .product-content {
   text-align: center;
-  font-size: 25px;
+  font-size: 17px;
   margin-top: 60px;
   color: gold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;

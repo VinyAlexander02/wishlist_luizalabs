@@ -3,7 +3,7 @@ import axios from "axios";
 import Header from "../../components/header";
 import Card from "react-bootstrap/Card";
 import { AiFillHeart } from "react-icons/ai";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/Tshirt.webp";
 import { getAll, save, remove } from "../../utils/localStorage";
 import "./style.css";
 
@@ -14,7 +14,7 @@ const storageKey = "wishlist";
 
 export const Main = () => {
   const [products, setProducts] = useState([]);
-  const [allProducts, setAllProducts] = useState([])
+  const [allProducts, setAllProducts] = useState([]);
   const [wishlist, setWishlist] = useState(getAll(storageKey));
 
   const handleSearch = (value) => {
@@ -29,10 +29,12 @@ export const Main = () => {
       .get(api)
       .then((response) => {
         setProducts(response.data.products);
-        setAllProducts(response.data.products)
+        setAllProducts(response.data.products);
       })
       .catch((error) => {
-        alert("Não foi possível encontrar encontar a lista de produtos no momento, por favor tente mais tarde!");
+        alert(
+          "Não foi possível encontrar encontar a lista de produtos no momento, por favor tente mais tarde!"
+        );
       });
   }, []);
 
@@ -48,9 +50,9 @@ export const Main = () => {
 
   return (
     <>
-      <Header onSearch={handleSearch}/>
+      <Header onSearch={handleSearch} />
       <div className="container">
-        <h3> Home </h3>
+        <h3> <a href='/'> Home </a> </h3>
         <div className="content">
           {products.map((p) => (
             <Card style={{ width: "18rem" }} className="card" key={p.id}>
