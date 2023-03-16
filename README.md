@@ -7,7 +7,7 @@ Project made in react of a wishlist (list of favorites) in a marketplace.
 With add and remove functionality, and access to bookmarks tab which contains remove functionality
 
 ## Layout 
-You can view the project layout through the link below: \n
+You can view the project layout through the link below:
 https://wishlist-luizalabs-coral.vercel.app/
 
 ## How to execute
