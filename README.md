@@ -8,6 +8,7 @@ With add and remove functionality, and access to bookmarks tab which contains re
 
 ## Layout 
 You can view the project layout through the link below:
+https://wishlist-luizalabs-coral.vercel.app/
 
 ## How to execute
  # Clone the project and access the folder 
