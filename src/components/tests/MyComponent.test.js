@@ -1,20 +1,3 @@
-// import React from 'react';
-// import Enzyme, { shallow } from 'enzyme';
-// import Adapter from 'enzyme-adapter-react-16';
-// import Header from '../header';
-
-// Enzyme.configure({ adapter: new Adapter() });
-
-// describe('MyComponent', () => {
-//   it('should render a div with text "Central de atendimento!"', () => {
-//     const wrapper = shallow(<Header />);
-//     expect(wrapper.find('div').text()).toEqual('Cidade: São Paulo');
-//     expect(wrapper.find('div').text()).toEqual('Central de atendimento');
-//     expect(wrapper.find('div').text()).toEqual('Lista de desejos');
-
-//   });
-// });
-
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Header from "../header";
