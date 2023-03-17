@@ -11,16 +11,16 @@ Antes de iniciar a instalação é necessário ter o git instalado na maquina <b
 2. Site para fazer a instalação do git: https://git-scm.com/downloads
 
 ## Baixando o projeto na maquina
-* Quando o git estiver instalado na maquina, rode o seguinte comando: <br />
-1. git clone https://github.com/VinyAlexander02/wishlist_luizalabs.git <br />
-* Para entrar na pasta do projeto
-1. cd wishlist_luizalabs
+1. Quando o git estiver instalado na maquina, rode o seguinte comando: <br />
+* git clone https://github.com/VinyAlexander02/wishlist_luizalabs.git <br />
+2. Para entrar na pasta do projeto
+* cd wishlist_luizalabs
 
-# Para iniciar o projeto rode os comandos abaixo:
-## Para instalar as dependências do projeto
-npm install ou yarn install
+# Para instalar e iniciar o projeto rode os comandos abaixo:
+1. Para instalar as dependências do projeto
+* npm install ou yarn install
 
-## Comando para iniciar o projeto
+2. Comando para iniciar o projeto
 npm start ou yarn start <br />
 O projeto irá rodar na porta: http://localhost:3000
 
