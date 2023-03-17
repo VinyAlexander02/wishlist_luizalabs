@@ -1,5 +1,5 @@
 ## Pré-Requisitos
-ReactJS <br/>
+React Js <br/>
 Bootstrap
 
 ## Project 

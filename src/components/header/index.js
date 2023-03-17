@@ -48,7 +48,7 @@ function Header({ onSearch }) {
           <Nav.Item as="li">
             <Nav.Link href="/wishlist" className="links">
               <div className="links-content">
-                <AiFillHeart /> Lista de Desejos
+                <AiFillHeart /> Lista de desejos
               </div>
             </Nav.Link>
           </Nav.Item>
