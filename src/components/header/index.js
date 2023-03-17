@@ -3,8 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { MdLocationOn } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiFillHeart } from "react-icons/ai";
-import "./style.css";
 import { useState } from "react";
+import "./style.css";
 
 function Header({ onSearch }) {
   const [search, setSearch] = useState([]);
