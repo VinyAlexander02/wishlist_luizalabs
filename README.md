@@ -20,9 +20,9 @@ Antes de iniciar a instalação é necessário ter o git instalado na maquina <b
 1. Para instalar as dependências do projeto
 * npm install ou yarn install
 
-2. Comando para iniciar o projeto
-npm start ou yarn start <br />
-O projeto irá rodar na porta: http://localhost:3000
+2. Comando para iniciar o projeto <br />
+* npm start ou yarn start <br />
+- O projeto irá rodar na porta: http://localhost:3000
 
 ## Layout 
 Você pode visualizar o layout do projeto através do link abaixo:<br />
